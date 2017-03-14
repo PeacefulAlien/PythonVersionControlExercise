@@ -9,6 +9,7 @@ def linear_search (my_item, my_list):
 		position += 1
 	return status, position
 
+#below is the testing case
 if __name__ == "__main__":
 	shoplist  = ["apple", "orange", "pork", "egg", "melon", "potato", "tomato", "milk", "nut"]
 	item = input("What are you looking for?")
