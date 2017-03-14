@@ -15,7 +15,8 @@ def binary_search(my_item, my_list):
 			top = middle - 1
 			
 	return status, middle
-	
+
+#below is the testing case
 if __name__ == "__main__":
 	numberlist = list()
 	for i in range(10):
