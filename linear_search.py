@@ -18,12 +18,12 @@ def linear_search (my_item, my_list):
 #below is the testing case
 if __name__ == "__main__":
 	shopping_list  = ["apple", "orange", "pork", "egg", "melon", "potato", "tomato", "milk", "nut"]
-	item = input("What are you looking for?")
+	test_item = input("What are you looking for?")
 	
-	search_result = linear_search(item, shopping_list)
+	search_result = linear_search(test_item, shopping_list)
 	if search_result:
-		print("Item is in the shopping list already.\n")
+		print("test_item is in the shopping list already.\n")
 	else:
-		shopping_list.append(item)
+		shopping_list.append(test_item)
 		print("your stuff is not in my shopping list. But I will add it to the list.\n", shopping_list)
 		
