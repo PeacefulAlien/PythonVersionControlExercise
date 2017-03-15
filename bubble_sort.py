@@ -19,9 +19,15 @@ def bubble_sort(my_list):
 if __name__ == "__main__":
 	number_list = list()
 	i = 0
+	'''
+	random.seed()
+	for i in range(20):
+		number_list.append(random.randint(1, 20))
+	'''
 	for i in range(20):
 		number_list.append(i + 1)
 	random.shuffle(number_list)
+	
 	print("This is the original list:\n", number_list)
 	
 	sorted_number_list, counter = bubble_sort(number_list)
