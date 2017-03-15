@@ -1,4 +1,8 @@
-#bubble sort
+#bubble sort, most basic sorting algorithm,
+#generate sorted list for search functions to perform better.
+#the function require a list input
+#and will return the sorted list and how many times have the algorithm go through the list.
+
 import random
 
 def bubble_sort(my_list):
@@ -12,7 +16,7 @@ def bubble_sort(my_list):
 				status = True
 				my_list[position], my_list[position + 1] = my_list[position + 1], my_list[position]
 		counter += 1
-	return (my_list, counter)
+	return my_list, counter
 
 #below is the testing case
 
@@ -20,6 +24,7 @@ if __name__ == "__main__":
 	number_list = list()
 	i = 0
 	'''
+	#alter for the generate the number_list
 	random.seed()
 	for i in range(20):
 		number_list.append(random.randint(1, 20))
