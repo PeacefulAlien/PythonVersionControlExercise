@@ -1,23 +1,29 @@
 #Linear Search function for Python practice
+#take an item and a list as arguments,
+#find the item if it is in the list, 
+#add the item if it is not in the list.
+
 
 def linear_search (my_item, my_list):
-	status = False
-	position = 0
-	while position < len(my_list) and not status:
-		if my_list [position] == my_item:
-			status = True
-		position += 1
-	return status, position
+	result = False
+	index_01 = 0
+	while index_01 < len(my_list) and not result:
+		if my_list [index_01] == my_item:
+			result = True
+		else:
+			index_01 += 1
+		
+	return result
 
 #below is the testing case
 if __name__ == "__main__":
-	shoplist  = ["apple", "orange", "pork", "egg", "melon", "potato", "tomato", "milk", "nut"]
+	shopping_list  = ["apple", "orange", "pork", "egg", "melon", "potato", "tomato", "milk", "nut"]
 	item = input("What are you looking for?")
-	searchresult, position = linear_search(item, shoplist)
-	if searchresult:
+	
+	search_result = linear_search(item, shopping_list)
+	if search_result:
 		print("Item is in the shopping list already.\n")
 	else:
-		shoplist.append(item)
-		print("your stuff is not in my shopping list. But I will add it to the list. {}\n".format(position))
-		print(shoplist)
+		shopping_list.append(item)
+		print("your stuff is not in my shopping list. But I will add it to the list.\n", shopping_list)
 		
