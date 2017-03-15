@@ -14,7 +14,7 @@ def binary_search(my_test_item, my_list):
 		else:
 			index_top = index_middle - 1
 			
-	return result, index_middle
+	return result, index_middle #create tuple
 
 #below is the testing case	
 if __name__ == "__main__":
@@ -22,7 +22,7 @@ if __name__ == "__main__":
 	for i in range(10):
 		number_list.append((i+1)*(i+1))
 	test_item = int(input("What number are you looking for? "))
-	test_result, index_result = binary_search(test_item, number_list)
+	test_result, index_result = binary_search(test_item, number_list)#tuple unpacking
 	if test_result == True:
 		print("the number {} is in the list at No.{}.".format(test_item, index_result + 1), number_list)
 	else:

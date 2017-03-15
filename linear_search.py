@@ -1,7 +1,6 @@
-#Linear Search function for Python practice
-#take an item and a list as arguments,
-#find the item if it is in the list, 
-#add the item if it is not in the list.
+#this is a general linear search function
+#it takes in two arguments: item and list
+#return the result if the item is in the list
 
 
 def linear_search (my_item, my_list):
@@ -16,6 +15,9 @@ def linear_search (my_item, my_list):
 	return result
 
 #below is the testing case
+#find item if it is in the list
+#add item if it is not in the list
+
 if __name__ == "__main__":
 	shopping_list  = ["apple", "orange", "pork", "egg", "melon", "potato", "tomato", "milk", "nut"]
 	test_item = input("What are you looking for?")
