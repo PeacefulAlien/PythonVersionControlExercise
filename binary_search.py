@@ -1,29 +1,29 @@
 #binary search function for python practice
 #obs:the list has to be sorted first
 
-def binary_search(my_item, my_list):
-	status = False
-	bottom = 0
-	top = len(my_list) - 1
-	while bottom <= top and not status:
-		middle = (bottom + top) // 2
-		if my_list[middle] == my_item:
-			status = True
-		elif my_li[middle] <= my_item:
-			bottom = middle + 1
+def binary_search(my_test_item, my_list):
+	result = False
+	index_bottom = 0
+	index_top = len(my_list) - 1
+	while index_bottom <= index_top and not result:
+		index_middle = (index_bottom + index_top) // 2
+		if my_list[index_middle] == my_test_item:
+			result = True
+		elif my_list[index_middle] <= my_test_item:
+			index_bottom = index_middle + 1
 		else:
-			top = middle - 1
+			index_top = index_middle - 1
 			
-	return status, middle
+	return result, index_middle
 
-#below is the testing case
+#below is the testing case	
 if __name__ == "__main__":
-	numberlist = list()
+	number_list = list()
 	for i in range(10):
-		list[i] = i * i
-	item = int(input("What number are you looking for? "))
-	status, position = binary_search(item, numberlist)
-	if status == True:
-		print("the number {} is in the list at No.{}.".format(item, position + 1))
+		number_list.append((i+1)*(i+1))
+	test_item = int(input("What number are you looking for? "))
+	test_result, index_result = binary_search(test_item, number_list)
+	if test_result == True:
+		print("the number {} is in the list at No.{}.".format(test_item, index_result + 1), number_list)
 	else:
-		print("the number {} is not in the list.\n This list is:".format(item), numberlist)
+		print("the number {} is not in the list.\n This list is:".format(test_item), number_list)
