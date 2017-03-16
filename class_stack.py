@@ -56,7 +56,6 @@ if __name__ == "__main__":
 	my_stack.check_status()
 	
 	"""
-	#auto tests
 	index = 0
 	for index in range(10):
 		my_stack.stack_push(index)
@@ -65,3 +64,4 @@ if __name__ == "__main__":
 	
 	for index in range(len(my_stack.items_list)):
 		print("{}".format(my_stack.stack_pop()))
+	
