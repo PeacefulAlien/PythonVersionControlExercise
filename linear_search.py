@@ -1,7 +1,7 @@
 #this is a general linear search function
 #it takes in two arguments: item and list
 #return the result if the item is in the list
-
+#run a Travis CI test
 
 def linear_search (my_item, my_list):
 	result = False
