@@ -1,11 +1,14 @@
 # PythonExercise
     Objectives 
         Python Proficiency  
-        Manipulating Data  
+        Manipulating Data & Structures  
         OOP Development  
-        Code Efficiency   
+        Code Efficiency
         to be continue... 
-    Git Version Control 
+    Git Version Control
+        Travis CI(Continuous Integration Tool)
+        ***Git on Local Machine
+        to be continue...
     Agile Development(Software Design)
         Testing Driving Development  
         Object Independence  
