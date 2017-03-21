@@ -1,4 +1,5 @@
-# PythonExercise
+﻿# PythonExercise
+# This is the distribution on X240
     Objectives 
         Python Proficiency  
         Manipulating Data & Structures  
